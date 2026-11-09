@@ -1,105 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#171719">
-    <meta name="description" content="Royal Berry menu and prices.">
+    <meta name="theme-color" content="#fff1dc">
 
-    <title>Royal Berry | Menu & Prices</title>
+    <title>Royal Berry | Menu</title>
+
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <main class="menu-card">
+    <main class="menu-page">
 
-        <!-- BRAND HEADER -->
-        <header class="brand">
+        <!-- HEADER -->
+        <header class="header">
 
-            <div class="brand-name">
-                <span>ROYAL</span>
-                <strong>BERRY</strong>
-            </div>
+            <div class="crown">♛</div>
 
-            <div class="berry-wave">
-                <svg viewBox="0 0 900 220" preserveAspectRatio="none">
-                    <path d="M0 90 C130 10 240 5 355 80 S555 190 675 105 S820 35 900 15 L900 150 C790 185 725 205 620 180 S445 75 350 95 S130 210 0 185Z"/>
+            <h1>
+                ROYAL <span>BERRY</span>
+            </h1>
 
-                    <path class="wave-highlight"
-                    d="M0 120 C130 40 240 35 355 110 S555 220 675 135 S820 65 900 45"/>
-                </svg>
-            </div>
+            <div class="gold-line"></div>
+
+            <p class="tagline">
+                Taste the Royal Difference
+            </p>
 
         </header>
 
 
-        <!-- MAIN MENU -->
-        <section class="menu-section">
+        <!-- MENU TITLE -->
+        <section class="menu-heading">
+            <span></span>
+            <h2>OUR MENU</h2>
+            <span></span>
+        </section>
 
-            <h1 class="section-label">MENU</h1>
 
-            <div class="price-list">
+        <!-- SMOOTHIES AND MILKSHAKES -->
+        <section class="product-grid">
 
-                <div class="price-row">
-                    <span>SMOOTHIE WITH MILK</span>
-                    <strong>₦1,800</strong>
-                </div>
+            <article class="product-card">
+                <div class="card-decoration">✦</div>
+                <h3>Smoothie with Milk</h3>
+                <div class="price">₦1,800</div>
+            </article>
 
-                <div class="price-row">
-                    <span>SMOOTHIE WITHOUT MILK</span>
-                    <strong>₦1,500</strong>
-                </div>
 
-                <div class="price-row">
-                    <span>SMOOTHIE WITH EXTRA MILK</span>
-                    <strong>₦2,100</strong>
-                </div>
+            <article class="product-card">
+                <div class="card-decoration">✦</div>
+                <h3>Smoothie without Milk</h3>
+                <div class="price">₦1,500</div>
+            </article>
 
-                <div class="price-row">
-                    <span>MILKSHAKE</span>
-                    <strong>₦1,800</strong>
-                </div>
 
-                <div class="price-row">
-                    <span>MILKSHAKE WITH EXTRA MILK</span>
-                    <strong>₦2,100</strong>
-                </div>
+            <article class="product-card">
+                <div class="card-decoration">✦</div>
+                <h3>Smoothie with Extra Milk</h3>
+                <div class="price">₦2,100</div>
+            </article>
 
-                <div class="price-row">
-                    <span>SLUSH</span>
-                    <strong>₦1,000</strong>
-                </div>
 
-            </div>
+            <article class="product-card">
+                <div class="card-decoration">✦</div>
+                <h3>Milkshake</h3>
+                <div class="price">₦1,800</div>
+            </article>
+
+
+            <article class="product-card">
+                <div class="card-decoration">✦</div>
+                <h3>Milkshake with Extra Milk</h3>
+                <div class="price">₦2,100</div>
+            </article>
+
+
+            <article class="product-card">
+                <div class="card-decoration">✦</div>
+                <h3>Slush</h3>
+                <div class="price">₦1,000</div>
+            </article>
 
         </section>
 
 
-        <!-- FRUIT PARFAIT SECTION -->
+        <!-- FRUIT PARFAIT -->
         <section class="parfait-section">
 
-            <h2 class="section-label">
-                FRUIT PARFAIT
-            </h2>
+            <div class="section-heading">
+                <span></span>
+                <h2>FRUIT PARFAIT</h2>
+                <span></span>
+            </div>
 
-            <div class="parfait-prices">
 
-                <div class="parfait-row">
-                    <span>BIG CUP</span>
-                    <strong>₦4,000</strong>
-                </div>
+            <div class="parfait-grid">
 
-                <div class="parfait-row">
-                    <span>SMALL CUP</span>
-                    <strong>₦3,000</strong>
-                </div>
+                <article class="product-card parfait-card">
+                    <div class="card-decoration">✦</div>
+                    <h3>Big Cup</h3>
+                    <div class="price">₦4,000</div>
+                </article>
+
+
+                <article class="product-card parfait-card">
+                    <div class="card-decoration">✦</div>
+                    <h3>Small Cup</h3>
+                    <div class="price">₦3,000</div>
+                </article>
 
             </div>
 
@@ -107,49 +124,103 @@
 
 
         <!-- PAYMENT DETAILS -->
-        <footer class="payment">
+        <section class="payment-section">
 
-            <p class="bank-name">MONIEPOINT</p>
+            <div class="payment-label">
+                MONIEPOINT
+            </div>
 
-            <div class="account-line">
+            <div class="account-card">
 
-                <span class="account-number" id="accountNumber">
+                <div class="account-number" id="accountNumber">
                     8229025638
-                </span>
+                </div>
 
-                <button
-                    class="copy-button"
-                    id="copyButton"
-                    type="button"
-                    aria-label="Copy Moniepoint account number">
-
-                    <svg viewBox="0 0 24 24">
-                        <rect x="8" y="8" width="12" height="12" rx="2"/>
-                        <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>
-                    </svg>
-
-                    <span>Copy</span>
-
+                <button class="copy-button" id="copyButton" type="button">
+                    <span>▢</span> Copy
                 </button>
 
             </div>
 
-            <p class="payment-hint">
-                Tap the copy button to copy the account number
+            <p class="payment-note">
+                Tap copy to copy our account number
             </p>
 
+        </section>
+
+
+        <!-- ORDER BUTTON -->
+        <section class="order-section">
+
+            <!-- Replace the number with your WhatsApp number -->
+            <a
+                href="https://wa.me/234XXXXXXXXXX"
+                class="order-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span>☏</span>
+                ORDER NOW
+                <span>→</span>
+            </a>
+
+            <p>Thank you for choosing Royal Berry ❤️</p>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© <span id="year"></span> Royal Berry Smoothie and Ice Cream</p>
+            <span>Made with love ♡</span>
         </footer>
 
     </main>
 
 
-    <!-- COPY NOTIFICATION -->
-    <div class="toast" id="toast" role="status" aria-live="polite">
-        Account number copied!
-    </div>
+    <!-- COPY ACCOUNT NUMBER -->
+    <script>
+        const copyButton = document.getElementById("copyButton");
+        const accountNumber = document.getElementById("accountNumber");
+
+        copyButton.addEventListener("click", async function () {
+
+            const number = accountNumber.textContent.trim();
+
+            try {
+                await navigator.clipboard.writeText(number);
+
+                copyButton.innerHTML = "✓ Copied!";
+                copyButton.classList.add("copied");
+
+                setTimeout(() => {
+                    copyButton.innerHTML = "▢ Copy";
+                    copyButton.classList.remove("copied");
+                }, 2000);
+
+            } catch (error) {
+
+                const temporaryInput = document.createElement("textarea");
+                temporaryInput.value = number;
+
+                document.body.appendChild(temporaryInput);
+                temporaryInput.select();
+                document.execCommand("copy");
+                temporaryInput.remove();
+
+                copyButton.innerHTML = "✓ Copied!";
+                
+                setTimeout(() => {
+                    copyButton.innerHTML = "▢ Copy";
+                }, 2000);
+            }
+
+        });
 
 
-    <script src="script.js"></script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 </html>
