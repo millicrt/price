@@ -1,17 +1,19 @@
 
-/* =========================
-   ROYAL BERRY MENU
-========================= */
+/* =====================================
+   ROYAL BERRY - SOFT SAGE LUXURY THEME
+===================================== */
 
 :root {
-    --cream: #fff3df;
-    --cream-dark: #f5dfbd;
-    --burgundy: #720b2c;
-    --burgundy-dark: #4b071e;
-    --gold: #c99a46;
-    --gold-light: #f4d69a;
-    --text: #54142b;
-    --white: #fffdf8;
+    --cream: #f8f7ef;
+    --cream-dark: #eeeee2;
+    --sage: #8fa99a;
+    --sage-dark: #587666;
+    --sage-deep: #405c4d;
+    --sage-light: #dce8df;
+    --gold: #c9b98d;
+    --gold-light: #e9dfc5;
+    --text: #45594d;
+    --white: #fffefa;
 }
 
 * {
@@ -31,7 +33,6 @@ body {
     overflow-x: hidden;
 }
 
-
 /* MAIN PAGE */
 
 .menu-page {
@@ -39,14 +40,13 @@ body {
     min-height: 100vh;
     padding: 55px 6%;
     background:
-        radial-gradient(circle at top left, #fffaf0, transparent 40%),
-        linear-gradient(135deg, #fff4e2, #f8e2c4, #fff5e7);
+        radial-gradient(circle at top left, #ffffff, transparent 40%),
+        linear-gradient(135deg, #faf9f2, #e9eee5, #f8f7ef);
     position: relative;
     overflow: hidden;
 }
 
-
-/* DECORATIVE BACKGROUND */
+/* SOFT BACKGROUND DECORATION */
 
 .menu-page::before,
 .menu-page::after {
@@ -55,7 +55,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: rgba(114, 11, 44, 0.045);
+    background: rgba(112, 145, 124, 0.08);
     pointer-events: none;
 }
 
@@ -69,7 +69,6 @@ body {
     bottom: 150px;
 }
 
-
 /* HEADER */
 
 .header {
@@ -80,23 +79,23 @@ body {
 }
 
 .crown {
-    color: var(--gold);
+    color: var(--sage);
     font-size: 58px;
     line-height: 1;
     margin-bottom: 5px;
-    text-shadow: 0 4px 8px rgba(114, 11, 44, 0.2);
+    text-shadow: 0 4px 8px rgba(64, 92, 77, 0.15);
 }
 
 .header h1 {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(42px, 7vw, 82px);
     letter-spacing: 2px;
-    color: var(--burgundy);
+    color: var(--sage-deep);
     line-height: 1.1;
 }
 
 .header h1 span {
-    color: var(--gold);
+    color: var(--sage);
 }
 
 .gold-line {
@@ -115,9 +114,8 @@ body {
     font-family: 'DM Serif Display', serif;
     font-style: italic;
     font-size: clamp(17px, 2.5vw, 25px);
-    color: var(--burgundy);
+    color: var(--sage-dark);
 }
-
 
 /* MENU HEADING */
 
@@ -143,19 +141,18 @@ body {
 .section-heading h2 {
     background: linear-gradient(
         135deg,
-        var(--burgundy),
-        var(--burgundy-dark)
+        var(--sage-dark),
+        var(--sage-deep)
     );
     color: var(--white);
     padding: 14px 45px;
     border-radius: 18px;
-    border: 2px solid var(--gold);
-    box-shadow: 0 8px 18px rgba(114, 11, 44, 0.2);
+    border: 2px solid var(--gold-light);
+    box-shadow: 0 8px 18px rgba(64, 92, 77, 0.16);
     font-size: 23px;
     letter-spacing: 2px;
     white-space: nowrap;
 }
-
 
 /* PRODUCT GRID */
 
@@ -169,7 +166,6 @@ body {
     z-index: 1;
 }
 
-
 /* PRODUCT CARDS */
 
 .product-card {
@@ -178,13 +174,13 @@ body {
     border-radius: 25px;
     background: linear-gradient(
         145deg,
-        #fffdf7,
-        #fcebd2
+        #fffefa,
+        #edf2e9
     );
-    border: 2px solid rgba(201, 154, 70, 0.65);
+    border: 2px solid rgba(143, 169, 154, 0.5);
     box-shadow:
-        0 12px 25px rgba(88, 31, 35, 0.12),
-        inset 0 2px 4px rgba(255,255,255,0.9);
+        0 12px 25px rgba(64, 92, 77, 0.10),
+        inset 0 2px 4px rgba(255,255,255,0.95);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -197,7 +193,7 @@ body {
 
 .product-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0 18px 30px rgba(88, 31, 35, 0.18);
+    box-shadow: 0 18px 30px rgba(64, 92, 77, 0.16);
 }
 
 .card-decoration {
@@ -209,9 +205,8 @@ body {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(19px, 2vw, 25px);
     line-height: 1.35;
-    color: var(--burgundy);
+    color: var(--sage-deep);
 }
-
 
 /* PRICE */
 
@@ -221,17 +216,16 @@ body {
     padding: 13px 12px;
     background: linear-gradient(
         135deg,
-        #8c1239,
-        var(--burgundy-dark)
+        #91aa99,
+        #597766
     );
     color: white;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--gold-light);
     border-radius: 16px;
     font-size: 23px;
     font-weight: 800;
-    box-shadow: 0 6px 12px rgba(114, 11, 44, 0.18);
+    box-shadow: 0 6px 12px rgba(64, 92, 77, 0.16);
 }
-
 
 /* FRUIT PARFAIT */
 
@@ -261,7 +255,6 @@ body {
     min-height: 220px;
 }
 
-
 /* PAYMENT SECTION */
 
 .payment-section {
@@ -276,11 +269,11 @@ body {
     display: inline-block;
     background: linear-gradient(
         135deg,
-        #8c1239,
-        var(--burgundy-dark)
+        var(--sage-dark),
+        var(--sage-deep)
     );
     color: white;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--gold-light);
     padding: 12px 45px;
     border-radius: 15px 15px 0 0;
     font-weight: 800;
@@ -291,10 +284,10 @@ body {
 .account-card {
     background: linear-gradient(
         145deg,
-        #fffdf7,
-        #f8e6ca
+        #fffefa,
+        #edf1e7
     );
-    border: 2px solid var(--gold);
+    border: 2px solid var(--gold-light);
     border-radius: 20px;
     padding: 25px;
     display: flex;
@@ -302,21 +295,21 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    box-shadow: 0 12px 25px rgba(88, 31, 35, 0.13);
+    box-shadow: 0 12px 25px rgba(64, 92, 77, 0.12);
 }
 
 .account-number {
     font-size: clamp(27px, 5vw, 45px);
     font-weight: 800;
-    color: var(--burgundy);
+    color: var(--sage-deep);
     letter-spacing: 2px;
     user-select: text;
 }
 
 .copy-button {
-    background: var(--burgundy);
+    background: var(--sage-dark);
     color: white;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--gold-light);
     border-radius: 13px;
     padding: 14px 23px;
     font-family: inherit;
@@ -327,13 +320,13 @@ body {
 }
 
 .copy-button:hover {
-    background: var(--burgundy-dark);
+    background: var(--sage-deep);
     transform: scale(1.04);
 }
 
 .copy-button.copied {
-    background: #286b42;
-    border-color: #286b42;
+    background: #477b58;
+    border-color: #477b58;
 }
 
 .payment-note {
@@ -341,7 +334,6 @@ body {
     margin-top: 12px;
     opacity: 0.75;
 }
-
 
 /* ORDER BUTTON */
 
@@ -360,39 +352,39 @@ body {
     padding: 18px 40px;
     background: linear-gradient(
         135deg,
-        #94133d,
-        var(--burgundy-dark)
+        #91aa99,
+        var(--sage-deep)
     );
     color: white;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--gold-light);
     border-radius: 18px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 800;
     letter-spacing: 1px;
-    box-shadow: 0 10px 20px rgba(114, 11, 44, 0.22);
+    box-shadow: 0 10px 20px rgba(64, 92, 77, 0.18);
     transition: 0.3s ease;
 }
 
 .order-button:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 25px rgba(114, 11, 44, 0.3);
+    box-shadow: 0 15px 25px rgba(64, 92, 77, 0.24);
 }
 
 .order-section p {
     margin-top: 18px;
     font-family: 'DM Serif Display', serif;
     font-style: italic;
+    color: var(--sage-dark);
 }
-
 
 /* FOOTER */
 
 footer {
     text-align: center;
     padding: 25px 10px 5px;
-    border-top: 1px solid rgba(201, 154, 70, 0.4);
-    color: var(--burgundy);
+    border-top: 1px solid rgba(143, 169, 154, 0.4);
+    color: var(--sage-deep);
     font-size: 13px;
     position: relative;
     z-index: 1;
@@ -401,10 +393,9 @@ footer {
 footer span {
     display: block;
     margin-top: 5px;
-    color: var(--gold);
+    color: var(--sage-dark);
     font-weight: 700;
 }
-
 
 /* TABLET */
 
@@ -422,9 +413,7 @@ footer span {
     .product-card {
         min-height: 220px;
     }
-
 }
-
 
 /* MOBILE PHONES */
 
@@ -473,7 +462,7 @@ footer span {
         border-radius: 13px;
     }
 
-    /* ONE PRODUCT PER ROW ON MOBILE */
+    /* ONE PRODUCT PER ROW */
 
     .product-grid {
         grid-template-columns: 1fr;
@@ -498,7 +487,7 @@ footer span {
         padding: 12px;
     }
 
-    /* PARFAIT ALSO STACKS ON MOBILE */
+    /* PARFAIT STACKS ON MOBILE */
 
     .parfait-grid {
         grid-template-columns: 1fr;
@@ -509,7 +498,7 @@ footer span {
         min-height: 190px;
     }
 
-    /* ACCOUNT NUMBER */
+    /* PAYMENT */
 
     .payment-section {
         margin: 50px auto 30px;
@@ -551,9 +540,7 @@ footer span {
         font-size: 11px;
         line-height: 1.8;
     }
-
 }
-
 
 /* EXTRA SMALL PHONES */
 
@@ -574,9 +561,7 @@ footer span {
     .account-number {
         font-size: 26px;
     }
-
 }
-
 
 /* ACCESSIBILITY */
 
@@ -592,5 +577,4 @@ footer span {
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
     }
-
 }
